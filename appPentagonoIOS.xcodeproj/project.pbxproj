@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69FBA3772439A80400C6ECA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBA3762439A80400C6ECA2 /* AppDelegate.swift */; };
+		69FBA3792439A80400C6ECA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBA3782439A80400C6ECA2 /* SceneDelegate.swift */; };
+		69FBA37C2439A80400C6ECA2 /* PentagooWCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69FBA37A2439A80400C6ECA2 /* PentagooWCoreData.xcdatamodeld */; };
+		69FBA37E2439A80400C6ECA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBA37D2439A80400C6ECA2 /* ContentView.swift */; };
+		69FBA3802439A80900C6ECA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FBA37F2439A80900C6ECA2 /* Assets.xcassets */; };
+		69FBA3832439A80900C6ECA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FBA3822439A80900C6ECA2 /* Preview Assets.xcassets */; };
+		69FBA3862439A80900C6ECA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69FBA3842439A80900C6ECA2 /* LaunchScreen.storyboard */; };
+		69FBA3932439A8ED00C6ECA2 /* Ejercicios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBA3922439A8ED00C6ECA2 /* Ejercicios.swift */; };
+		69FBA3952439A95200C6ECA2 /* Guardar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBA3942439A95200C6ECA2 /* Guardar.swift */; };
+		69FBA3992439A97100C6ECA2 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBA3982439A97100C6ECA2 /* CollectionView.swift */; };
+		69FBA39B2439A97C00C6ECA2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBA39A2439A97C00C6ECA2 /* ImagePicker.swift */; };
+		EF654A6C244A3F1C00BAD217 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A6B244A3F1C00BAD217 /* Login.swift */; };
+		EF654A6E244A47B500BAD217 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF654A6D244A47B500BAD217 /* GoogleService-Info.plist */; };
+		EF654A70244AC3EE00BAD217 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A6F244AC3EE00BAD217 /* ViewRouter.swift */; };
+		EF654A72244AE36300BAD217 /* Appointments.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A71244AE36300BAD217 /* Appointments.swift */; };
+		EF654A74244AE68600BAD217 /* NewAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A73244AE68600BAD217 /* NewAppointment.swift */; };
+		EF654A75244AF73800BAD217 /* Pods_PentagooWCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77C9443B620C6CFD9FE8921 /* Pods_PentagooWCoreData.framework */; };
+		EF654A79244B613200BAD217 /* Tutoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A78244B613200BAD217 /* Tutoria.swift */; };
+		EF654A7B244B61E700BAD217 /* GetTutorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A7A244B61E700BAD217 /* GetTutorias.swift */; };
+		EF654A7D244B70A800BAD217 /* ReachabilityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A7C244B70A800BAD217 /* ReachabilityHandler.swift */; };
+		EF654A7F244B70E700BAD217 /* ReachabilityObserverDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A7E244B70E700BAD217 /* ReachabilityObserverDelegate.swift */; };
+		EF654A81244B79D700BAD217 /* ReachabilityHandlerR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A80244B79D700BAD217 /* ReachabilityHandlerR.swift */; };
+		EF654A83244BB0D200BAD217 /* TutoriaCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A82244BB0D200BAD217 /* TutoriaCache.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29DAD2252FED966D0225CA6D /* Pods-PentagooWCoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PentagooWCoreData.debug.xcconfig"; path = "Target Support Files/Pods-PentagooWCoreData/Pods-PentagooWCoreData.debug.xcconfig"; sourceTree = "<group>"; };
+		69FBA3732439A80400C6ECA2 /* PentagooWCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PentagooWCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69FBA3762439A80400C6ECA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69FBA3782439A80400C6ECA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		69FBA37B2439A80400C6ECA2 /* PentagooWCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PentagooWCoreData.xcdatamodel; sourceTree = "<group>"; };
+		69FBA37D2439A80400C6ECA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		69FBA37F2439A80900C6ECA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69FBA3822439A80900C6ECA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		69FBA3852439A80900C6ECA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69FBA3872439A80900C6ECA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69FBA3922439A8ED00C6ECA2 /* Ejercicios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios.swift; sourceTree = "<group>"; };
+		69FBA3942439A95200C6ECA2 /* Guardar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guardar.swift; sourceTree = "<group>"; };
+		69FBA3982439A97100C6ECA2 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		69FBA39A2439A97C00C6ECA2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		8C6008D7C64FF4D7D4A250FF /* Pods-PentagooWCoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PentagooWCoreData.release.xcconfig"; path = "Target Support Files/Pods-PentagooWCoreData/Pods-PentagooWCoreData.release.xcconfig"; sourceTree = "<group>"; };
+		C77C9443B620C6CFD9FE8921 /* Pods_PentagooWCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PentagooWCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF654A6B244A3F1C00BAD217 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		EF654A6D244A47B500BAD217 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF654A6F244AC3EE00BAD217 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		EF654A71244AE36300BAD217 /* Appointments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointments.swift; sourceTree = "<group>"; };
+		EF654A73244AE68600BAD217 /* NewAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAppointment.swift; sourceTree = "<group>"; };
+		EF654A78244B613200BAD217 /* Tutoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutoria.swift; sourceTree = "<group>"; };
+		EF654A7A244B61E700BAD217 /* GetTutorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTutorias.swift; sourceTree = "<group>"; };
+		EF654A7C244B70A800BAD217 /* ReachabilityHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityHandler.swift; sourceTree = "<group>"; };
+		EF654A7E244B70E700BAD217 /* ReachabilityObserverDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityObserverDelegate.swift; sourceTree = "<group>"; };
+		EF654A80244B79D700BAD217 /* ReachabilityHandlerR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityHandlerR.swift; sourceTree = "<group>"; };
+		EF654A82244BB0D200BAD217 /* TutoriaCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutoriaCache.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69FBA3702439A80400C6ECA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF654A75244AF73800BAD217 /* Pods_PentagooWCoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69FBA36A2439A80400C6ECA2 = {
+			isa = PBXGroup;
+			children = (
+				69FBA3752439A80400C6ECA2 /* PentagooWCoreData */,
+				69FBA3742439A80400C6ECA2 /* Products */,
+				FBE0F0B8EA7845E5927593C2 /* Pods */,
+				F05380A24563C7A5DF050998 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69FBA3742439A80400C6ECA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69FBA3732439A80400C6ECA2 /* PentagooWCoreData.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69FBA3752439A80400C6ECA2 /* PentagooWCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				69FBA3912439A8DD00C6ECA2 /* Views */,
+				69FBA3902439A8CF00C6ECA2 /* Modelo */,
+				69FBA3762439A80400C6ECA2 /* AppDelegate.swift */,
+				69FBA3782439A80400C6ECA2 /* SceneDelegate.swift */,
+				EF654A6F244AC3EE00BAD217 /* ViewRouter.swift */,
+				69FBA37D2439A80400C6ECA2 /* ContentView.swift */,
+				69FBA37F2439A80900C6ECA2 /* Assets.xcassets */,
+				69FBA3842439A80900C6ECA2 /* LaunchScreen.storyboard */,
+				EF654A6D244A47B500BAD217 /* GoogleService-Info.plist */,
+				69FBA3872439A80900C6ECA2 /* Info.plist */,
+				69FBA37A2439A80400C6ECA2 /* PentagooWCoreData.xcdatamodeld */,
+				69FBA3812439A80900C6ECA2 /* Preview Content */,
+			);
+			path = PentagooWCoreData;
+			sourceTree = "<group>";
+		};
+		69FBA3812439A80900C6ECA2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				69FBA3822439A80900C6ECA2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		69FBA3902439A8CF00C6ECA2 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				69FBA3922439A8ED00C6ECA2 /* Ejercicios.swift */,
+				EF654A78244B613200BAD217 /* Tutoria.swift */,
+				EF654A7A244B61E700BAD217 /* GetTutorias.swift */,
+				EF654A7C244B70A800BAD217 /* ReachabilityHandler.swift */,
+				EF654A7E244B70E700BAD217 /* ReachabilityObserverDelegate.swift */,
+				EF654A82244BB0D200BAD217 /* TutoriaCache.swift */,
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
+		69FBA3912439A8DD00C6ECA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69FBA3942439A95200C6ECA2 /* Guardar.swift */,
+				69FBA3982439A97100C6ECA2 /* CollectionView.swift */,
+				69FBA39A2439A97C00C6ECA2 /* ImagePicker.swift */,
+				EF654A6B244A3F1C00BAD217 /* Login.swift */,
+				EF654A71244AE36300BAD217 /* Appointments.swift */,
+				EF654A73244AE68600BAD217 /* NewAppointment.swift */,
+				EF654A80244B79D700BAD217 /* ReachabilityHandlerR.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F05380A24563C7A5DF050998 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C77C9443B620C6CFD9FE8921 /* Pods_PentagooWCoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBE0F0B8EA7845E5927593C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29DAD2252FED966D0225CA6D /* Pods-PentagooWCoreData.debug.xcconfig */,
+				8C6008D7C64FF4D7D4A250FF /* Pods-PentagooWCoreData.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69FBA3722439A80400C6ECA2 /* PentagooWCoreData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69FBA38A2439A80900C6ECA2 /* Build configuration list for PBXNativeTarget "PentagooWCoreData" */;
+			buildPhases = (
+				9B78E9163E639E74A4509634 /* [CP] Check Pods Manifest.lock */,
+				69FBA36F2439A80400C6ECA2 /* Sources */,
+				69FBA3702439A80400C6ECA2 /* Frameworks */,
+				69FBA3712439A80400C6ECA2 /* Resources */,
+				2405C6E786F18FEAB4E3CCB4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PentagooWCoreData;
+			productName = PentagooWCoreData;
+			productReference = 69FBA3732439A80400C6ECA2 /* PentagooWCoreData.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69FBA36B2439A80400C6ECA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Juan Arango";
+				TargetAttributes = {
+					69FBA3722439A80400C6ECA2 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 69FBA36E2439A80400C6ECA2 /* Build configuration list for PBXProject "appPentagonoIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69FBA36A2439A80400C6ECA2;
+			productRefGroup = 69FBA3742439A80400C6ECA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69FBA3722439A80400C6ECA2 /* PentagooWCoreData */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69FBA3712439A80400C6ECA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69FBA3862439A80900C6ECA2 /* LaunchScreen.storyboard in Resources */,
+				EF654A6E244A47B500BAD217 /* GoogleService-Info.plist in Resources */,
+				69FBA3832439A80900C6ECA2 /* Preview Assets.xcassets in Resources */,
+				69FBA3802439A80900C6ECA2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2405C6E786F18FEAB4E3CCB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PentagooWCoreData/Pods-PentagooWCoreData-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PentagooWCoreData/Pods-PentagooWCoreData-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PentagooWCoreData/Pods-PentagooWCoreData-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B78E9163E639E74A4509634 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PentagooWCoreData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69FBA36F2439A80400C6ECA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF654A7D244B70A800BAD217 /* ReachabilityHandler.swift in Sources */,
+				EF654A83244BB0D200BAD217 /* TutoriaCache.swift in Sources */,
+				EF654A74244AE68600BAD217 /* NewAppointment.swift in Sources */,
+				69FBA3932439A8ED00C6ECA2 /* Ejercicios.swift in Sources */,
+				69FBA3772439A80400C6ECA2 /* AppDelegate.swift in Sources */,
+				69FBA37C2439A80400C6ECA2 /* PentagooWCoreData.xcdatamodeld in Sources */,
+				EF654A7F244B70E700BAD217 /* ReachabilityObserverDelegate.swift in Sources */,
+				69FBA39B2439A97C00C6ECA2 /* ImagePicker.swift in Sources */,
+				69FBA37E2439A80400C6ECA2 /* ContentView.swift in Sources */,
+				EF654A70244AC3EE00BAD217 /* ViewRouter.swift in Sources */,
+				EF654A7B244B61E700BAD217 /* GetTutorias.swift in Sources */,
+				69FBA3952439A95200C6ECA2 /* Guardar.swift in Sources */,
+				EF654A79244B613200BAD217 /* Tutoria.swift in Sources */,
+				EF654A6C244A3F1C00BAD217 /* Login.swift in Sources */,
+				69FBA3792439A80400C6ECA2 /* SceneDelegate.swift in Sources */,
+				EF654A72244AE36300BAD217 /* Appointments.swift in Sources */,
+				EF654A81244B79D700BAD217 /* ReachabilityHandlerR.swift in Sources */,
+				69FBA3992439A97100C6ECA2 /* CollectionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		69FBA3842439A80900C6ECA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69FBA3852439A80900C6ECA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69FBA3882439A80900C6ECA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69FBA3892439A80900C6ECA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69FBA38B2439A80900C6ECA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29DAD2252FED966D0225CA6D /* Pods-PentagooWCoreData.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PentagooWCoreData/Preview Content\"";
+				DEVELOPMENT_TEAM = W7726DUH2X;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PentagooWCoreData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moviles.pentagono;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69FBA38C2439A80900C6ECA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C6008D7C64FF4D7D4A250FF /* Pods-PentagooWCoreData.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PentagooWCoreData/Preview Content\"";
+				DEVELOPMENT_TEAM = 4FZZ9YMZ5R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PentagooWCoreData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moviles.pentagono;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69FBA36E2439A80400C6ECA2 /* Build configuration list for PBXProject "appPentagonoIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69FBA3882439A80900C6ECA2 /* Debug */,
+				69FBA3892439A80900C6ECA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69FBA38A2439A80900C6ECA2 /* Build configuration list for PBXNativeTarget "PentagooWCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69FBA38B2439A80900C6ECA2 /* Debug */,
+				69FBA38C2439A80900C6ECA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		69FBA37A2439A80400C6ECA2 /* PentagooWCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				69FBA37B2439A80400C6ECA2 /* PentagooWCoreData.xcdatamodel */,
+			);
+			currentVersion = 69FBA37B2439A80400C6ECA2 /* PentagooWCoreData.xcdatamodel */;
+			path = PentagooWCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 69FBA36B2439A80400C6ECA2 /* Project object */;
+}
