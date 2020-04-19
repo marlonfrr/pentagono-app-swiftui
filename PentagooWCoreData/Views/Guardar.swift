@@ -11,6 +11,7 @@ import SwiftUI
 
 struct Guardar: View {
     @Environment(\.managedObjectContext) var contexto
+    @ObservedObject var viewRouter: ViewRouter
     @State private var imageData : Data = .init(capacity: 0)
     @State private var mostrarMenu = false
     @State private var imagePicker = false
@@ -71,8 +72,13 @@ struct Guardar: View {
                         .cornerRadius(20)
                     
                 }
+                Spacer()
+                Picker (selection: $viewRouter.currentPage, label: Text("")){
+                                Image(systemName: "folder.fill").tag(0)
+                                Image(systemName: "arrow.up.doc").tag(1)
+                                //   Image(systemName: "pencil").tag(2)
                 
-                
+                            }.pickerStyle(SegmentedPickerStyle())
             }
         }
     }
@@ -94,7 +100,7 @@ struct Guardar: View {
 
 struct Guardar_Previews: PreviewProvider {
     static var previews: some View {
-        Guardar()
+        Guardar(viewRouter: ViewRouter())
     }
 }
 

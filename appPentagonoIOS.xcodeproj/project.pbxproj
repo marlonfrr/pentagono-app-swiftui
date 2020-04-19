@@ -26,8 +26,6 @@
 		EF654A75244AF73800BAD217 /* Pods_PentagooWCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77C9443B620C6CFD9FE8921 /* Pods_PentagooWCoreData.framework */; };
 		EF654A79244B613200BAD217 /* Tutoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A78244B613200BAD217 /* Tutoria.swift */; };
 		EF654A7B244B61E700BAD217 /* GetTutorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A7A244B61E700BAD217 /* GetTutorias.swift */; };
-		EF654A7D244B70A800BAD217 /* ReachabilityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A7C244B70A800BAD217 /* ReachabilityHandler.swift */; };
-		EF654A7F244B70E700BAD217 /* ReachabilityObserverDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A7E244B70E700BAD217 /* ReachabilityObserverDelegate.swift */; };
 		EF654A81244B79D700BAD217 /* ReachabilityHandlerR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A80244B79D700BAD217 /* ReachabilityHandlerR.swift */; };
 		EF654A83244BB0D200BAD217 /* TutoriaCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A82244BB0D200BAD217 /* TutoriaCache.swift */; };
 /* End PBXBuildFile section */
@@ -56,8 +54,6 @@
 		EF654A73244AE68600BAD217 /* NewAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAppointment.swift; sourceTree = "<group>"; };
 		EF654A78244B613200BAD217 /* Tutoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutoria.swift; sourceTree = "<group>"; };
 		EF654A7A244B61E700BAD217 /* GetTutorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTutorias.swift; sourceTree = "<group>"; };
-		EF654A7C244B70A800BAD217 /* ReachabilityHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityHandler.swift; sourceTree = "<group>"; };
-		EF654A7E244B70E700BAD217 /* ReachabilityObserverDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityObserverDelegate.swift; sourceTree = "<group>"; };
 		EF654A80244B79D700BAD217 /* ReachabilityHandlerR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityHandlerR.swift; sourceTree = "<group>"; };
 		EF654A82244BB0D200BAD217 /* TutoriaCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutoriaCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,8 +121,6 @@
 				69FBA3922439A8ED00C6ECA2 /* Ejercicios.swift */,
 				EF654A78244B613200BAD217 /* Tutoria.swift */,
 				EF654A7A244B61E700BAD217 /* GetTutorias.swift */,
-				EF654A7C244B70A800BAD217 /* ReachabilityHandler.swift */,
-				EF654A7E244B70E700BAD217 /* ReachabilityObserverDelegate.swift */,
 				EF654A82244BB0D200BAD217 /* TutoriaCache.swift */,
 			);
 			path = Modelo;
@@ -279,13 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF654A7D244B70A800BAD217 /* ReachabilityHandler.swift in Sources */,
 				EF654A83244BB0D200BAD217 /* TutoriaCache.swift in Sources */,
 				EF654A74244AE68600BAD217 /* NewAppointment.swift in Sources */,
 				69FBA3932439A8ED00C6ECA2 /* Ejercicios.swift in Sources */,
 				69FBA3772439A80400C6ECA2 /* AppDelegate.swift in Sources */,
 				69FBA37C2439A80400C6ECA2 /* PentagooWCoreData.xcdatamodeld in Sources */,
-				EF654A7F244B70E700BAD217 /* ReachabilityObserverDelegate.swift in Sources */,
 				69FBA39B2439A97C00C6ECA2 /* ImagePicker.swift in Sources */,
 				69FBA37E2439A80400C6ECA2 /* ContentView.swift in Sources */,
 				EF654A70244AC3EE00BAD217 /* ViewRouter.swift in Sources */,

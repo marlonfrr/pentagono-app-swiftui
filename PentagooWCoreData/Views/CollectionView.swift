@@ -13,6 +13,7 @@ struct CollectionView: View {
     @FetchRequest(entity: Ejercicios.entity(), sortDescriptors :[
         NSSortDescriptor(keyPath: \Ejercicios.nombre, ascending: true)
     ])var ejercicios : FetchedResults<Ejercicios>
+    @ObservedObject var viewRouter: ViewRouter
     
     var body: some View {
         VStack{
@@ -44,7 +45,11 @@ struct CollectionView: View {
                 }
             }
         
-    }
+        }.navigationBarItems(trailing: Button(action:{
+            self.viewRouter.currentPage = 2
+        }){
+            Text("Guardar")
+        })
 }
 
 }
@@ -56,7 +61,7 @@ extension View {
 }
 struct CollectionView_Previews: PreviewProvider {
     static var previews: some View {
-        CollectionView()
+        CollectionView(viewRouter: ViewRouter())
     }
 }
 

@@ -25,11 +25,20 @@ struct Appointments: View {
             HStack(){
                 if ReachabilityHandlerR().isConnectedToNetwork() {
                     VStack(){
-                        NavigationLink(destination: NewAppointment(viewRouter: ViewRouter())
-                            .environment(\.managedObjectContext, managedObjectContext)
-                        ){
-                            Text("Reservar una tutoría")
-                                .font(.system(size: 20, weight: .light))
+                        HStack{
+                            NavigationLink(destination: NewAppointment(viewRouter: ViewRouter())
+                                .environment(\.managedObjectContext, managedObjectContext)
+                            ){
+                                Text("Reservar una tutoría")
+                                    .font(.system(size: 20, weight: .light))
+                            }
+                            NavigationLink(destination:
+                                CollectionView(viewRouter: ViewRouter())
+                                .environment(\.managedObjectContext, managedObjectContext)
+                            ){
+                                Text("Ver ejercicios")
+                                    .font(.system(size: 20, weight: .light))
+                            }
                         }
                         List{
                             ForEach(self.datos.datos){item in
@@ -77,8 +86,6 @@ struct Appointments: View {
         }
     }
 }
-
-//.background(Color.yellow.edgesIgnoringSafeArea(.all))
 
 struct Appointments_Previews: PreviewProvider {
     static var previews: some View {

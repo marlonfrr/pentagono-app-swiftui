@@ -12,7 +12,7 @@ import Combine
 
 class ViewRouter: ObservableObject {
     let objectWillChange = PassthroughSubject<ViewRouter,Never>()
-    var currentPage: Int = 3 {
+    var currentPage: Int = 0 {
         didSet {
             objectWillChange.send(self)
         }

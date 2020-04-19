@@ -64,10 +64,7 @@ struct Login: View {
             if UserDefaults.standard.object(forKey: "logged") != nil {
                 self.viewRouter.logged = true
             }
-            
-            
         }
-        //        .navigationBarTitle("Bienvenido a Pentágono")
     }
     struct Login_Previews: PreviewProvider {
         static var previews: some View {
