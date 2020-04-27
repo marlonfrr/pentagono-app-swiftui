@@ -19,9 +19,7 @@ struct Guardar: View {
     
     
     var body: some View {
-        
         NavigationView{
-            
             VStack{
                 NavigationLink(destination: ImagePicker(show: self.$imagePicker, image: self.$imageData, source: self.source), isActive: self.$imagePicker){
                     Text("")

@@ -10,8 +10,15 @@ import Foundation
 import CoreData
 
 class TutoriaCache: NSManagedObject, Identifiable {
-    @NSManaged public var id : String
-    @NSManaged public var subject : String
-    @NSManaged public var tutor : String
-    @NSManaged public var time : String
+    @NSManaged var id: String
+    @NSManaged var  idMonitor: String
+    @NSManaged var  idEstudiante: String
+    @NSManaged var  materia: String
+    @NSManaged var  tema: String
+    @NSManaged var  rating: Int16
+    @NSManaged var  comentario: String
+    @NSManaged var  cancelada: Bool
+    @NSManaged var  asistio: Bool
+    @NSManaged var  fechaFin: Double
+    @NSManaged var  fechaInicio: Double
 }

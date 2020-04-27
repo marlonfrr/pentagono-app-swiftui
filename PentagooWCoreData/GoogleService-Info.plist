@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>297199114610-av6o7v1qi1hse14kt6h9kpdm78ph6g26.apps.googleusercontent.com</string>
+	<string>1022105329232-n8ir6hntviqodarp30knsiogp58pi34a.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.297199114610-av6o7v1qi1hse14kt6h9kpdm78ph6g26</string>
+	<string>com.googleusercontent.apps.1022105329232-n8ir6hntviqodarp30knsiogp58pi34a</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDzrXQ35TJt-fU5QNagm_8wsx7vaZ8ZMno</string>
+	<string>AIzaSyDsgafwhRuCPhzlAgUvJ8QJig4NqZhFLcg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>297199114610</string>
+	<string>1022105329232</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.moviles.pentagono</string>
 	<key>PROJECT_ID</key>
-	<string>moviles-pentagono-app</string>
+	<string>bdpentagono</string>
 	<key>STORAGE_BUCKET</key>
-	<string>moviles-pentagono-app.appspot.com</string>
+	<string>bdpentagono.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:297199114610:ios:0cb252abaf4a24c7cae5eb</string>
+	<string>1:1022105329232:ios:d702a747eab571f9bd3b55</string>
 	<key>DATABASE_URL</key>
-	<string>https://moviles-pentagono-app.firebaseio.com</string>
+	<string>https://bdpentagono.firebaseio.com</string>
 </dict>
 </plist>

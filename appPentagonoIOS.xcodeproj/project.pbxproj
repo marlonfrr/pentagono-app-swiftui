@@ -19,15 +19,25 @@
 		69FBA3992439A97100C6ECA2 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBA3982439A97100C6ECA2 /* CollectionView.swift */; };
 		69FBA39B2439A97C00C6ECA2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBA39A2439A97C00C6ECA2 /* ImagePicker.swift */; };
 		EF654A6C244A3F1C00BAD217 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A6B244A3F1C00BAD217 /* Login.swift */; };
-		EF654A6E244A47B500BAD217 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF654A6D244A47B500BAD217 /* GoogleService-Info.plist */; };
 		EF654A70244AC3EE00BAD217 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A6F244AC3EE00BAD217 /* ViewRouter.swift */; };
-		EF654A72244AE36300BAD217 /* Appointments.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A71244AE36300BAD217 /* Appointments.swift */; };
+		EF654A72244AE36300BAD217 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A71244AE36300BAD217 /* Home.swift */; };
 		EF654A74244AE68600BAD217 /* NewAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A73244AE68600BAD217 /* NewAppointment.swift */; };
 		EF654A75244AF73800BAD217 /* Pods_PentagooWCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77C9443B620C6CFD9FE8921 /* Pods_PentagooWCoreData.framework */; };
 		EF654A79244B613200BAD217 /* Tutoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A78244B613200BAD217 /* Tutoria.swift */; };
 		EF654A7B244B61E700BAD217 /* GetTutorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A7A244B61E700BAD217 /* GetTutorias.swift */; };
 		EF654A81244B79D700BAD217 /* ReachabilityHandlerR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A80244B79D700BAD217 /* ReachabilityHandlerR.swift */; };
 		EF654A83244BB0D200BAD217 /* TutoriaCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF654A82244BB0D200BAD217 /* TutoriaCache.swift */; };
+		EF8924492452AE18009328FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF8924482452AE18009328FA /* GoogleService-Info.plist */; };
+		EF89244B2453120A009328FA /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89244A2453120A009328FA /* Navigator.swift */; };
+		EF89244F24531553009328FA /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89244E24531553009328FA /* Profile.swift */; };
+		EF8924532453E1FD009328FA /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8924522453E1FD009328FA /* Appointment.swift */; };
+		EF89245524548AD7009328FA /* ExerciseViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89245424548AD7009328FA /* ExerciseViewer.swift */; };
+		EF8924592454BE97009328FA /* Horario.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8924582454BE97009328FA /* Horario.swift */; };
+		EF89245B245657A6009328FA /* ExercisesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89245A245657A5009328FA /* ExercisesCollection.swift */; };
+		EF89245D24565842009328FA /* Pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89245C24565842009328FA /* Pdf.swift */; };
+		EF89245F2456593A009328FA /* GetPdfs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89245E2456593A009328FA /* GetPdfs.swift */; };
+		EF89246124565D52009328FA /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89246024565D52009328FA /* Materia.swift */; };
+		EF892463245674E7009328FA /* PdfObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF892462245674E7009328FA /* PdfObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,14 +58,24 @@
 		8C6008D7C64FF4D7D4A250FF /* Pods-PentagooWCoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PentagooWCoreData.release.xcconfig"; path = "Target Support Files/Pods-PentagooWCoreData/Pods-PentagooWCoreData.release.xcconfig"; sourceTree = "<group>"; };
 		C77C9443B620C6CFD9FE8921 /* Pods_PentagooWCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PentagooWCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF654A6B244A3F1C00BAD217 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		EF654A6D244A47B500BAD217 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF654A6F244AC3EE00BAD217 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
-		EF654A71244AE36300BAD217 /* Appointments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointments.swift; sourceTree = "<group>"; };
+		EF654A71244AE36300BAD217 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		EF654A73244AE68600BAD217 /* NewAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAppointment.swift; sourceTree = "<group>"; };
 		EF654A78244B613200BAD217 /* Tutoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutoria.swift; sourceTree = "<group>"; };
 		EF654A7A244B61E700BAD217 /* GetTutorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTutorias.swift; sourceTree = "<group>"; };
 		EF654A80244B79D700BAD217 /* ReachabilityHandlerR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityHandlerR.swift; sourceTree = "<group>"; };
 		EF654A82244BB0D200BAD217 /* TutoriaCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutoriaCache.swift; sourceTree = "<group>"; };
+		EF8924482452AE18009328FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF89244A2453120A009328FA /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		EF89244E24531553009328FA /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		EF8924522453E1FD009328FA /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		EF89245424548AD7009328FA /* ExerciseViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewer.swift; sourceTree = "<group>"; };
+		EF8924582454BE97009328FA /* Horario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horario.swift; sourceTree = "<group>"; };
+		EF89245A245657A5009328FA /* ExercisesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesCollection.swift; sourceTree = "<group>"; };
+		EF89245C24565842009328FA /* Pdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pdf.swift; sourceTree = "<group>"; };
+		EF89245E2456593A009328FA /* GetPdfs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPdfs.swift; sourceTree = "<group>"; };
+		EF89246024565D52009328FA /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
+		EF892462245674E7009328FA /* PdfObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +119,7 @@
 				69FBA37D2439A80400C6ECA2 /* ContentView.swift */,
 				69FBA37F2439A80900C6ECA2 /* Assets.xcassets */,
 				69FBA3842439A80900C6ECA2 /* LaunchScreen.storyboard */,
-				EF654A6D244A47B500BAD217 /* GoogleService-Info.plist */,
+				EF8924482452AE18009328FA /* GoogleService-Info.plist */,
 				69FBA3872439A80900C6ECA2 /* Info.plist */,
 				69FBA37A2439A80400C6ECA2 /* PentagooWCoreData.xcdatamodeld */,
 				69FBA3812439A80900C6ECA2 /* Preview Content */,
@@ -122,6 +142,11 @@
 				EF654A78244B613200BAD217 /* Tutoria.swift */,
 				EF654A7A244B61E700BAD217 /* GetTutorias.swift */,
 				EF654A82244BB0D200BAD217 /* TutoriaCache.swift */,
+				EF8924582454BE97009328FA /* Horario.swift */,
+				EF89245C24565842009328FA /* Pdf.swift */,
+				EF89245E2456593A009328FA /* GetPdfs.swift */,
+				EF89246024565D52009328FA /* Materia.swift */,
+				EF892462245674E7009328FA /* PdfObject.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -133,9 +158,14 @@
 				69FBA3982439A97100C6ECA2 /* CollectionView.swift */,
 				69FBA39A2439A97C00C6ECA2 /* ImagePicker.swift */,
 				EF654A6B244A3F1C00BAD217 /* Login.swift */,
-				EF654A71244AE36300BAD217 /* Appointments.swift */,
+				EF654A71244AE36300BAD217 /* Home.swift */,
 				EF654A73244AE68600BAD217 /* NewAppointment.swift */,
 				EF654A80244B79D700BAD217 /* ReachabilityHandlerR.swift */,
+				EF89244A2453120A009328FA /* Navigator.swift */,
+				EF89244E24531553009328FA /* Profile.swift */,
+				EF8924522453E1FD009328FA /* Appointment.swift */,
+				EF89245424548AD7009328FA /* ExerciseViewer.swift */,
+				EF89245A245657A5009328FA /* ExercisesCollection.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,9 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				69FBA3862439A80900C6ECA2 /* LaunchScreen.storyboard in Resources */,
-				EF654A6E244A47B500BAD217 /* GoogleService-Info.plist in Resources */,
 				69FBA3832439A80900C6ECA2 /* Preview Assets.xcassets in Resources */,
 				69FBA3802439A80900C6ECA2 /* Assets.xcassets in Resources */,
+				EF8924492452AE18009328FA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,20 +303,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF89245D24565842009328FA /* Pdf.swift in Sources */,
 				EF654A83244BB0D200BAD217 /* TutoriaCache.swift in Sources */,
+				EF89244B2453120A009328FA /* Navigator.swift in Sources */,
+				EF8924592454BE97009328FA /* Horario.swift in Sources */,
 				EF654A74244AE68600BAD217 /* NewAppointment.swift in Sources */,
+				EF89245F2456593A009328FA /* GetPdfs.swift in Sources */,
 				69FBA3932439A8ED00C6ECA2 /* Ejercicios.swift in Sources */,
+				EF89245B245657A6009328FA /* ExercisesCollection.swift in Sources */,
 				69FBA3772439A80400C6ECA2 /* AppDelegate.swift in Sources */,
 				69FBA37C2439A80400C6ECA2 /* PentagooWCoreData.xcdatamodeld in Sources */,
 				69FBA39B2439A97C00C6ECA2 /* ImagePicker.swift in Sources */,
+				EF89244F24531553009328FA /* Profile.swift in Sources */,
 				69FBA37E2439A80400C6ECA2 /* ContentView.swift in Sources */,
 				EF654A70244AC3EE00BAD217 /* ViewRouter.swift in Sources */,
+				EF8924532453E1FD009328FA /* Appointment.swift in Sources */,
 				EF654A7B244B61E700BAD217 /* GetTutorias.swift in Sources */,
 				69FBA3952439A95200C6ECA2 /* Guardar.swift in Sources */,
+				EF89246124565D52009328FA /* Materia.swift in Sources */,
 				EF654A79244B613200BAD217 /* Tutoria.swift in Sources */,
+				EF892463245674E7009328FA /* PdfObject.swift in Sources */,
 				EF654A6C244A3F1C00BAD217 /* Login.swift in Sources */,
 				69FBA3792439A80400C6ECA2 /* SceneDelegate.swift in Sources */,
-				EF654A72244AE36300BAD217 /* Appointments.swift in Sources */,
+				EF654A72244AE36300BAD217 /* Home.swift in Sources */,
+				EF89245524548AD7009328FA /* ExerciseViewer.swift in Sources */,
 				EF654A81244B79D700BAD217 /* ReachabilityHandlerR.swift in Sources */,
 				69FBA3992439A97100C6ECA2 /* CollectionView.swift in Sources */,
 			);
@@ -356,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -410,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -427,10 +467,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PentagooWCoreData/Preview Content\"";
 				DEVELOPMENT_TEAM = W7726DUH2X;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PentagooWCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -438,6 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moviles.pentagono;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_STYLE = all;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,16 +492,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PentagooWCoreData/Preview Content\"";
 				DEVELOPMENT_TEAM = 4FZZ9YMZ5R;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PentagooWCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.moviles.pentagono;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_STYLE = all;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

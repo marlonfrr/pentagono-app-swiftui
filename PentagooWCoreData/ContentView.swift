@@ -18,8 +18,9 @@ struct ContentView: View {
                 if viewRouter.currentPage == 2 {
                     Guardar(viewRouter: viewRouter).environment(\.managedObjectContext, managedObjectContext)
                 } else {
-                    Appointments(viewRouter: viewRouter)
-                        .environment(\.managedObjectContext, managedObjectContext)
+                    Navigator(viewRouter: viewRouter).environment(\.managedObjectContext, managedObjectContext)
+//                    Home(viewRouter: viewRouter)
+//                        .environment(\.managedObjectContext, managedObjectContext)
                 }
             } else {
                 Login(viewRouter: viewRouter)

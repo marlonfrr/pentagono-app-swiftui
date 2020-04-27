@@ -19,7 +19,7 @@ struct CollectionView: View {
         VStack{
             HStack{
                  Spacer()
-            Text("Imagenes guardadas").font(.largeTitle)
+            Text("Ejercicios guardados").font(.largeTitle)
             Spacer()
             }
             ScrollView(.horizontal, showsIndicators: true){
@@ -40,11 +40,14 @@ struct CollectionView: View {
                           
                         }
                         }
-                        
                     }
                 }
             }
-        
+            Button(action: {
+                
+            }, label: {
+                Text("Buscar ejercicios").foregroundColor(.white)
+            }).padding(.all, 8).background(Color.yellow).cornerRadius(12)
         }.navigationBarItems(trailing: Button(action:{
             self.viewRouter.currentPage = 2
         }){

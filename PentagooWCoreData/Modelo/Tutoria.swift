@@ -10,7 +10,14 @@ import Foundation
 
 struct Tutoria : Identifiable {
     var id: String
-    var subject: String
-    var tutor: String
-    var time: String
+    var idMonitor: String
+    var idEstudiante: String
+    var materia: String
+    var tema: String
+    var rating: Int16
+    var comentario: String
+    var cancelada: Bool
+    var asistio: Bool
+    var fechaFin: Double
+    var fechaInicio: Double
 }
