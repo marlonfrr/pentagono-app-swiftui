@@ -33,7 +33,7 @@ class GetTutorias: ObservableObject {
                     let idMonitor = valor["idMonitor"] as? String ?? "Sin id monitor"
                     let materia = valor["materia"] as? String ?? "Sin materia"
                     let tema = valor["tema"] as? String ?? "Sin tema"
-                    let cancelada = valor["cancelara"] as? Bool ?? false
+                    let cancelada = valor["cancelada"] as? Bool ?? false
                     let asistio = valor["asistio"] as? Bool ?? false
                     let dateF = dateFormatterGet.date(from: valor["fechaFin"] as! String)?.timeIntervalSince1970
                     let dateI = dateFormatterGet.date(from: valor["fechaInicio"] as! String)?.timeIntervalSince1970

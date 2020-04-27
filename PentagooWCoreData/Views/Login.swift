@@ -47,7 +47,9 @@ struct Login: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 18){
-                //                Text("Hola").bold()
+                
+                Image("penta").resizable().frame(width: 120, height: 120)
+                Spacer()
                 TextField("Correo electrónico", text: $email).textFieldStyle(RoundedBorderTextFieldStyle())
                 SecureField("Contraseña", text: $password).textFieldStyle(RoundedBorderTextFieldStyle())
                 //                NavigationLink(destination: Guardar()) {
@@ -56,7 +58,7 @@ struct Login: View {
                 }) {
                     Text("Iniciar sesión")
                 }
-                //                }
+                Spacer()
             }.navigationBarTitle("Bienvenido a Pentágono", displayMode: .large).padding(.all).alert(isPresented: $showAlert) {
                 Alert(title: Text("No tienes internet"), message: Text("No tienes internet, inténtalo de nuevo"), dismissButton: .default(Text("Got it!")))
             }

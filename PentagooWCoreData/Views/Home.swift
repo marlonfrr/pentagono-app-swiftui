@@ -37,9 +37,13 @@ struct Home: View {
                                             Text("Tutoría").bold()
                                             Text("Materia: \(item.materia)")
                                             Text("Fecha: \(Date(timeIntervalSince1970: TimeInterval(item.fechaInicio)), formatter: Self.taskDateFormat)")
+                                            if item.cancelada {
+                                                Text("Tu monitoría fue cancelada")
+                                            }
+                                            
                                         }
                                     }
-                                }
+                                }.disabled(item.cancelada)
                             }
                         }
                         Spacer()

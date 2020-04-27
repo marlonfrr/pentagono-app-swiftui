@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ExercisesCollection: View {
     @ObservedObject private var pdfsModel = GetPdfs()
-    @State var materia:String = "vectorial"
+    @State var materia:String = ""
     
     var body: some View {
         NavigationView{
