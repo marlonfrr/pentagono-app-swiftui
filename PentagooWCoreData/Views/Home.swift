@@ -36,6 +36,7 @@ struct Home: View {
                                         VStack(alignment: .leading){
                                             Text("Tutoría").bold()
                                             Text("Materia: \(item.materia)")
+                                            Text("Materia: \(item.id)")
                                             Text("Fecha: \(Date(timeIntervalSince1970: TimeInterval(item.fechaInicio)), formatter: Self.taskDateFormat)")
                                             if item.cancelada {
                                                 Text("Tu monitoría fue cancelada")
@@ -58,7 +59,9 @@ struct Home: View {
                     }
                 } else {
                     VStack(){
-                        Text("No tienes conexión a internet, viendo citas guardadas")
+                        VStack {
+                            Text("No tienes conexión a internet, viendo citas guardadas").foregroundColor(.white).padding(.all, 12)
+                        }.background(Color.red).cornerRadius(20).padding(.bottom, 8).padding(.all, 4)
                         List{
                             ForEach(self.tutorias){item in
                                 HStack {

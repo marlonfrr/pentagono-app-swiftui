@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        NewRelic.start(withApplicationToken:"AAbdcc52a65352bb0aebfcbd32e5f61e27e6b5bb68-NRMA")
+
         FirebaseApp.configure()
         
         return true

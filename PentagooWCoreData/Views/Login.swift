@@ -22,8 +22,8 @@ struct Login: View {
     
     func login() {
         self.isLoading = true
-        let hola = ReachabilityHandlerR().isConnectedToNetwork()
-        if(hola){
+        let conectado = ReachabilityHandlerR().isConnectedToNetwork()
+        if(conectado){
             print("Tienes conexión a internet")
         } else {
             print("No tienes conexión a internet")
@@ -33,10 +33,10 @@ struct Login: View {
         
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if error != nil {
-                print("Hola")
+                print("Error")
                 print(error!)
             } else {
-                print("Adiís")
+                print("Adiós")
                 print(result!)
                 self.viewRouter.logged = true
                 UserDefaults.standard.set(true, forKey: "logged")

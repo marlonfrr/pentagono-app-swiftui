@@ -22,6 +22,9 @@ struct NewAppointment: View {
     @State var selectedTutor: String = ""
     @State var nombreDia:String = ""
     
+    // Alert
+    @State var isAlert:Bool = false
+    
     var materiasPosibles:[String] = ["Precalculo", "Calculo diferencial", "Calculo integral", "Matematica estructural", "Calculo vectorial"]
     
     @Environment(\.managedObjectContext) var managedObjectContext
@@ -93,6 +96,11 @@ struct NewAppointment: View {
     }
     
     func create() {
+        if(!ReachabilityHandlerR().isConnectedToNetwork()){
+            print("No tienes conexión a internet, no se puede crear la monitoria");
+            self.isAlert = true
+            return;
+        }
         let formatterSend = DateFormatter()
         formatterSend.dateFormat = "y-MM-d"
         var ola:String = formatterSend.string(from: self.startDate)
@@ -227,7 +235,9 @@ struct NewAppointment: View {
                 Text("Crear").foregroundColor(.white)
                 Spacer()
             }).disabled(self.materia==""&&self.selectedTutor=="").padding(.all).background(Color.yellow).cornerRadius(0)
-        }.navigationBarTitle("Crear nueva tutoría", displayMode: .large)
+            }.navigationBarTitle("Crear nueva tutoría", displayMode: .large).alert(isPresented: self.$isAlert){
+                Alert(title: Text("No tienes internet"), message: Text("No tienes internet para reservar la monitoría"), dismissButton: .default(Text("Aceptar")))
+            }
     }
 }
 

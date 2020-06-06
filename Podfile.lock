@@ -273,6 +273,7 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - NewRelicAgent (6.11.0)
   - PromisesObjC (1.2.8)
   - ReachabilitySwift (5.0.0)
 
@@ -280,6 +281,7 @@ DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Firestore
+  - NewRelicAgent
   - ReachabilitySwift
 
 SPEC REPOS:
@@ -304,6 +306,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - NewRelicAgent
     - PromisesObjC
     - ReachabilitySwift
 
@@ -328,9 +331,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: cea130bbfe5a7edc8d06d3f0d17288c32ffe9925
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  NewRelicAgent: 24f83ea0d59c60da66ead225089523697da1aa18
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
 
-PODFILE CHECKSUM: 0d84fd56c68e8850cd9756c01729f2d7a169d840
+PODFILE CHECKSUM: a11d70656852cca10b6d300728c245a89a6f8bec
 
 COCOAPODS: 1.9.1

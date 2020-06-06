@@ -9,6 +9,10 @@
 import SwiftUI
 import FirebaseFirestore
 
+enum ActiveAlert {
+    case cancel, internet, whatsapp, internetGuardar
+}
+
 struct Appointment: View {
     
     var param : Tutoria
@@ -17,6 +21,7 @@ struct Appointment: View {
     @State var puntaje: String = "0"
     @State var isAlert: Bool = false
     @State var start: Bool = false
+    @State var alertShown: ActiveAlert = .cancel
     
     @Environment(\.managedObjectContext) var managedObjectContext
     @Environment(\.presentationMode) var back
@@ -29,6 +34,11 @@ struct Appointment: View {
     }
     
     func guardarPuntaje(){
+        if(!ReachabilityHandlerR().isConnectedToNetwork()){
+            print("No tienes conexión a internet");
+            self.alertShown = .internetGuardar
+            self.isAlert = true
+        } else {
         let db = Firestore.firestore()
         let monitorRef = db.collection("reservas").document(self.param.id)
         monitorRef.updateData([
@@ -42,10 +52,24 @@ struct Appointment: View {
                 self.back.wrappedValue.dismiss()
             }
         }
+            }
+    }
+    
+    func checkAlert(){
+        if(!ReachabilityHandlerR().isConnectedToNetwork()){
+            print("No tienes conexión a internet");
+            self.cancelar();
+            DispatchQueue.global().async {
+                self.alertShown = .internet
+                self.isAlert = true
+            }
+            self.alertShown = .internet
+        } else {
+            self.cancelar()
+        }
     }
     
     func cancelar(){
-        print("aa")
         let db = Firestore.firestore()
         let monitorRef = db.collection("reservas").document(self.param.id)
         monitorRef.updateData([
@@ -57,6 +81,30 @@ struct Appointment: View {
                 print("Cancelada")
                 self.back.wrappedValue.dismiss()
             }
+        }
+    }
+    
+    func asistir(){
+        let db = Firestore.firestore()
+        let monitorRef = db.collection("reservas").document(self.param.id)
+        monitorRef.updateData([
+            "asistio": true
+        ]) { err in
+            if let err = err {
+                print("Error updating document: \(err)")
+            } else {
+                print("Cancelada")
+                self.back.wrappedValue.dismiss()
+            }
+        }
+    }
+    
+    func checkWhatsapp(){
+        if(!ReachabilityHandlerR().isConnectedToNetwork()){
+            self.isAlert = true;
+            self.alertShown = .whatsapp
+        } else {
+            self.asistir()
         }
     }
     
@@ -89,7 +137,7 @@ struct Appointment: View {
                 } else if now>param.fechaInicio&&now<param.fechaFin {
                     VStack(alignment: .center){
                     Text("Entra a tu monitoría a través de Whatsapp")
-                        Button(action: {self.start=true}, label:{ HStack{
+                        Button(action: {self.checkWhatsapp()}, label:{ HStack{
                         Image("waicon").renderingMode(.original).resizable().aspectRatio(contentMode: .fill).frame(width: 80, height: 80)}})
                     }
                 } else if now>param.fechaFin {
@@ -109,16 +157,26 @@ struct Appointment: View {
                                 }).padding(.all).background(Color.green).cornerRadius(20).padding(.bottom, 8)
                 }
                 Spacer()
-            }.padding(.all).navigationBarTitle("Monitoría de \(param.materia)").navigationBarItems(trailing: Button(action: {self.isAlert = true}, label: {
+            }.padding(.all).navigationBarTitle("Monitoría de \(param.materia)").navigationBarItems(trailing: Button(action: {self.isAlert = true;
+                self.alertShown = .cancel}, label: {
                 HStack{
                     Image(systemName: "xmark.circle.fill").foregroundColor(now>param.fechaInicio ? Color.gray:Color.red)
                     Text("Cancelar").foregroundColor(now>param.fechaInicio ? Color.gray:Color.red)
                 }
             }))
-        }.alert(isPresented: self.$isAlert) { () -> Alert in
-                Alert(title: Text("Cancelar tutoría"), message: Text("¿Estás seguro de cancelar la tutoría?"), primaryButton: .default(Text("Sí"), action: {
-                    self.cancelar()
+        }.alert(isPresented: self.$isAlert){
+            switch alertShown {
+            case .cancel:
+                return Alert(title: Text("Cancelar tutoría"), message: Text("¿Estás seguro de cancelar la tutoría?"), primaryButton: .default(Text("Sí"), action: {
+                    self.checkAlert()
                 }), secondaryButton: .default(Text("Volver")))
+            case .internet:
+                return Alert(title: Text("No tienes internet"), message: Text("No tienes internet, será cancelada automáticamente cuando tengas conexiónBuscar"), dismissButton: .default(Text("Aceptar")))
+            case .whatsapp:
+                return Alert(title: Text("No tienes internet"), message: Text("No tienes internet para acceder a la monitoría"), dismissButton: .default(Text("Aceptar")))
+            case .internetGuardar:
+                return Alert(title: Text("No tienes internet"), message: Text("Error al guardar el feedback"), dismissButton: .default(Text("Aceptar")))
+            }
         }
     }
 }
