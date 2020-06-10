@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var viewRouter: ViewRouter
     @Environment(\.managedObjectContext) var managedObjectContext
-    //    @ViewBuilder
+    @ViewBuilder
     var body: some View {
         VStack{
             if viewRouter.logged {

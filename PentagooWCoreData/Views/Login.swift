@@ -15,9 +15,7 @@ struct Login: View {
     
     @State var email = "pentagono.moviles@gmail.com"
     @State var password = ""
-    @State var alertMessage = "Something went wrong"
     @State var isLoading = false
-    @State var isSuccessful = false
     @State var showAlert = false
     
     func login() {
@@ -59,12 +57,20 @@ struct Login: View {
                     Text("Iniciar sesión")
                 }
                 Spacer()
+                NavigationLink(destination: Register(viewRouter: ViewRouter())
+                ){
+                    HStack {
+                        Text("Registrarse").padding(.all, 12)
+                    }
+                }
             }.navigationBarTitle("Bienvenido a Pentágono", displayMode: .large).padding(.all).alert(isPresented: $showAlert) {
                 Alert(title: Text("No tienes internet"), message: Text("No tienes internet, inténtalo de nuevo"), dismissButton: .default(Text("Got it!")))
             }
         }.onAppear{
             if UserDefaults.standard.object(forKey: "logged") != nil {
                 self.viewRouter.logged = true
+            } else {
+                self.viewRouter.logged = false
             }
         }
     }

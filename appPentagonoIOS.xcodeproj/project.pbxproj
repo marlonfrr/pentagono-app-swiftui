@@ -39,6 +39,7 @@
 		EF89245F2456593A009328FA /* GetPdfs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89245E2456593A009328FA /* GetPdfs.swift */; };
 		EF89246124565D52009328FA /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89246024565D52009328FA /* Materia.swift */; };
 		EF892463245674E7009328FA /* PdfObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF892462245674E7009328FA /* PdfObject.swift */; };
+		EFDAE24B249022D9005B74E8 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDAE24A249022D9005B74E8 /* Register.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		EF89245E2456593A009328FA /* GetPdfs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPdfs.swift; sourceTree = "<group>"; };
 		EF89246024565D52009328FA /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
 		EF892462245674E7009328FA /* PdfObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfObject.swift; sourceTree = "<group>"; };
+		EFDAE24A249022D9005B74E8 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				EF8924522453E1FD009328FA /* Appointment.swift */,
 				EF89245424548AD7009328FA /* ExerciseViewer.swift */,
 				EF89245A245657A5009328FA /* ExercisesCollection.swift */,
+				EFDAE24A249022D9005B74E8 /* Register.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				EF8924532453E1FD009328FA /* Appointment.swift in Sources */,
 				EF654A7B244B61E700BAD217 /* GetTutorias.swift in Sources */,
 				69FBA3952439A95200C6ECA2 /* Guardar.swift in Sources */,
+				EFDAE24B249022D9005B74E8 /* Register.swift in Sources */,
 				EF89246124565D52009328FA /* Materia.swift in Sources */,
 				EF654A79244B613200BAD217 /* Tutoria.swift in Sources */,
 				EF892463245674E7009328FA /* PdfObject.swift in Sources */,

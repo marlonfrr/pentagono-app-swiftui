@@ -10,7 +10,7 @@ import SwiftUI
 import FirebaseFirestore
 
 enum ActiveAlert {
-    case cancel, internet, whatsapp, internetGuardar
+    case cancel, internet, whatsapp, internetGuardar, puntajeError
 }
 
 struct Appointment: View {
@@ -22,6 +22,13 @@ struct Appointment: View {
     @State var isAlert: Bool = false
     @State var start: Bool = false
     @State var alertShown: ActiveAlert = .cancel
+//    var puntajeInvalid: Bool {
+//        puntaje.count > 1 || puntaje
+//    }
+//
+//    @State var commentValid: Bool = {
+//
+//    }
     
     @Environment(\.managedObjectContext) var managedObjectContext
     @Environment(\.presentationMode) var back
@@ -38,7 +45,15 @@ struct Appointment: View {
             print("No tienes conexión a internet");
             self.alertShown = .internetGuardar
             self.isAlert = true
-        } else {
+            return;
+        }
+        // Atención, machete
+        if(self.puntaje.count>1||self.puntaje.lowercased().contains("a")||self.puntaje.lowercased().contains("b")||self.puntaje.lowercased().contains("c")||self.puntaje.lowercased().contains("d")||self.puntaje.lowercased().contains("e")||self.puntaje.lowercased().contains("f")||self.puntaje.lowercased().contains("g")||self.puntaje.lowercased().contains("g")||self.puntaje.lowercased().contains("h")||self.puntaje.lowercased().contains("i")||self.puntaje.lowercased().contains("j")||self.puntaje.lowercased().contains("k")||self.puntaje.lowercased().contains("l")||self.puntaje.lowercased().contains("m")||self.puntaje.lowercased().contains("n")||self.puntaje.lowercased().contains("ñ")||self.puntaje.lowercased().contains("o")||self.puntaje.lowercased().contains("p")||self.puntaje.lowercased().contains("q")||self.puntaje.lowercased().contains("r")||self.puntaje.lowercased().contains("s")||self.puntaje.lowercased().contains("t")||self.puntaje.lowercased().contains("u")||self.puntaje.lowercased().contains("v")||self.puntaje.lowercased().contains("w")||self.puntaje.lowercased().contains("x")||self.puntaje.lowercased().contains("y")||self.puntaje.lowercased().contains("z")){
+            self.alertShown = .puntajeError
+            self.isAlert = true
+            return;
+        }
+        else {
         let db = Firestore.firestore()
         let monitorRef = db.collection("reservas").document(self.param.id)
         monitorRef.updateData([
@@ -151,10 +166,10 @@ struct Appointment: View {
                         Text("Puntaje")
                         TextField("1-5", text: self.$puntaje).textFieldStyle(RoundedBorderTextFieldStyle()).frame(width: 70).keyboardType(.numberPad)
                     }
-                    TextField("Comentarios", text: self.$comentario).textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField("Comentarios, sugerencias", text: self.$comentario).textFieldStyle(RoundedBorderTextFieldStyle())
                     Button(action: {self.guardarPuntaje()}, label: {
                                     Text("Guardar").foregroundColor(.white)
-                                }).padding(.all).background(Color.green).cornerRadius(20).padding(.bottom, 8)
+                    }).padding(.all).background(Color.green).cornerRadius(20).padding(.bottom, 8).disabled(self.puntaje.isEmpty||self.comentario.isEmpty)
                 }
                 Spacer()
             }.padding(.all).navigationBarTitle("Monitoría de \(param.materia)").navigationBarItems(trailing: Button(action: {self.isAlert = true;
@@ -171,11 +186,13 @@ struct Appointment: View {
                     self.checkAlert()
                 }), secondaryButton: .default(Text("Volver")))
             case .internet:
-                return Alert(title: Text("No tienes internet"), message: Text("No tienes internet, será cancelada automáticamente cuando tengas conexiónBuscar"), dismissButton: .default(Text("Aceptar")))
+                return Alert(title: Text("No tienes internet"), message: Text("No tienes internet, será cancelada automáticamente cuando tengas conexión"), dismissButton: .default(Text("Aceptar")))
             case .whatsapp:
                 return Alert(title: Text("No tienes internet"), message: Text("No tienes internet para acceder a la monitoría"), dismissButton: .default(Text("Aceptar")))
             case .internetGuardar:
                 return Alert(title: Text("No tienes internet"), message: Text("Error al guardar el feedback"), dismissButton: .default(Text("Aceptar")))
+            case .puntajeError:
+                return Alert(title: Text("Error al guardar calificación"), message: Text("El puntaje debe ser un número entre 1 y 5"), dismissButton: .default(Text("Aceptar")))
             }
         }
     }

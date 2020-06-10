@@ -20,9 +20,9 @@ struct Navigator: View {
                 Text("Home")}
             //                ExerciseViewer().tabItem{Image(systemName: "pencil")
             //                Text("Ejercicios")}
-            ExercisesCollection().tabItem{Image(systemName: "pencil")
+            ExercisesCollection().environment(\.managedObjectContext, managedObjectContext).tabItem{Image(systemName: "pencil")
                 Text("Ejercicios")}
-            Profile(viewRouter: ViewRouter()).tabItem{Image(systemName: "person")
+            Profile(viewRouter: ViewRouter()).environment(\.managedObjectContext, managedObjectContext).tabItem{Image(systemName: "person")
                 Text("Perfil")}
         }
     }

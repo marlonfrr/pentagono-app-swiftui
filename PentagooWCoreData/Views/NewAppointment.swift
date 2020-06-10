@@ -16,7 +16,7 @@ struct NewAppointment: View {
     @State var topic = ""
     @State var rango = ""
     @State var tutor = ""
-    @State var isLoading = false
+    @State var alertMessage = ""
     @State var isSuccessful = false
     @State var showAlert = false
     @State var selectedTutor: String = ""
@@ -34,6 +34,12 @@ struct NewAppointment: View {
     @State var horarios = [Horario]()
     
     func buscar() {
+        if(!ReachabilityHandlerR().isConnectedToNetwork()){
+            print("No tienes conexión a internet, no se puede buscar horarios");
+            self.isAlert = true
+            self.alertMessage = "No tienes conexión a internet, no se puede buscar horarios"
+            return;
+        }
         let formatter = DateFormatter()
         let formatterSend = DateFormatter()
         formatter.dateFormat = "EEEE"
@@ -99,6 +105,7 @@ struct NewAppointment: View {
         if(!ReachabilityHandlerR().isConnectedToNetwork()){
             print("No tienes conexión a internet, no se puede crear la monitoria");
             self.isAlert = true
+            self.alertMessage = "No tienes conexión a internet, no se puede crear la monitoría"
             return;
         }
         let formatterSend = DateFormatter()
@@ -191,7 +198,7 @@ struct NewAppointment: View {
             VStack(alignment: .leading, spacing: 8){
                 Group{
                     Form{
-                        DatePicker("Fecha monitoría", selection: self.$startDate, in: Date()..., displayedComponents: .date)
+                        DatePicker("Fecha monitoría", selection: self.$startDate, in: Date()...Calendar.current.date(byAdding: .day, value: +6, to: Date())!, displayedComponents: .date)
                         Text("Selecciona materia")
                         List{
                             ScrollView(.horizontal, showsIndicators: false, content: {
@@ -236,7 +243,7 @@ struct NewAppointment: View {
                 Spacer()
             }).disabled(self.materia==""&&self.selectedTutor=="").padding(.all).background(Color.yellow).cornerRadius(0)
             }.navigationBarTitle("Crear nueva tutoría", displayMode: .large).alert(isPresented: self.$isAlert){
-                Alert(title: Text("No tienes internet"), message: Text("No tienes internet para reservar la monitoría"), dismissButton: .default(Text("Aceptar")))
+                Alert(title: Text("No tienes internet"), message: Text(self.alertMessage), dismissButton: .default(Text("Aceptar")))
             }
     }
 }
